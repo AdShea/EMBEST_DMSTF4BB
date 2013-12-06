@@ -7,8 +7,8 @@
     <templates_path>resources/gencfg/processors/boards/stm32f4xx/templates</templates_path>
     <output_path>..</output_path>
   </configuration_settings>
-  <board_name>STMicroelectronics STM32F4-Discovery</board_name>
-  <board_id>ST_STM32F4_DISCOVERY</board_id>
+  <board_name>STMicroelectronics STM32F4-Discovery with Embest add-on</board_name>
+  <board_id>EMBEST_DMSTF4BB</board_id>
   <board_functions></board_functions>
   <subtype>STM32F40_41xxx</subtype>
   <clocks
@@ -270,7 +270,7 @@
         Mode="Input"
         Alternate="0" />
       <pin15
-        ID=""
+        ID="SD_DETECT"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
@@ -344,45 +344,45 @@
         Mode="Alternate"
         Alternate="6" />
       <pin8
-        ID=""
+        ID="SD_D0"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
+        Resistor="Floating"
         Mode="Input"
-        Alternate="0" />
+        Alternate="12" />
       <pin9
-        ID=""
+        ID="SD_D1"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
+        Resistor="Floating"
         Mode="Input"
-        Alternate="0" />
+        Alternate="12" />
       <pin10
-        ID="SCLK"
+        ID="SD_D2"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
         Resistor="Floating"
         Mode="Alternate"
-        Alternate="6" />
+        Alternate="12" />
       <pin11
-        ID=""
+        ID="SD_D3"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
+        Resistor="Floating"
         Mode="Input"
-        Alternate="0" />
+        Alternate="12" />
       <pin12
-        ID="SDIN"
+        ID="SD_CLK"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
         Resistor="Floating"
         Mode="Alternate"
-        Alternate="6" />
+        Alternate="12" />
       <pin13
         ID=""
         Type="PushPull"
@@ -426,13 +426,13 @@
         Mode="Input"
         Alternate="0" />
       <pin2
-        ID=""
+        ID="SD_CMD"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
+        Resistor="Floating"
         Mode="Input"
-        Alternate="0" />
+        Alternate="12" />
       <pin3
         ID=""
         Type="PushPull"

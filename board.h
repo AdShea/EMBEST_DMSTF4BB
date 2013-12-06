@@ -523,11 +523,11 @@
                                      PIN_OSPEED_100M(GPIOC_PIN5) |          \
                                      PIN_OSPEED_100M(GPIOC_PIN6) |          \
                                      PIN_OSPEED_100M(GPIOC_MCLK) |          \
-                                     PIN_OSPEED_25M(GPIOC_SD_D0) |          \
-                                     PIN_OSPEED_25M(GPIOC_SD_D1) |          \
-                                     PIN_OSPEED_25M(GPIOC_SD_D2) |          \
-                                     PIN_OSPEED_25M(GPIOC_SD_D3) |          \
-                                     PIN_OSPEED_25M(GPIOC_SD_CLK) |         \
+                                     PIN_OSPEED_100M(GPIOC_SD_D0) |         \
+                                     PIN_OSPEED_100M(GPIOC_SD_D1) |         \
+                                     PIN_OSPEED_100M(GPIOC_SD_D2) |         \
+                                     PIN_OSPEED_100M(GPIOC_SD_D3) |         \
+                                     PIN_OSPEED_100M(GPIOC_SD_CLK) |        \
                                      PIN_OSPEED_100M(GPIOC_PIN13) |         \
                                      PIN_OSPEED_100M(GPIOC_PIN14) |         \
                                      PIN_OSPEED_100M(GPIOC_PIN15))
@@ -634,7 +634,7 @@
                                      PIN_OTYPE_PUSHPULL(GPIOD_LED6))
 #define VAL_GPIOD_OSPEEDR           (PIN_OSPEED_100M(GPIOD_PIN0) |          \
                                      PIN_OSPEED_100M(GPIOD_PIN1) |          \
-                                     PIN_OSPEED_25M(GPIOD_SD_CMD) |         \
+                                     PIN_OSPEED_100M(GPIOD_SD_CMD) |        \
                                      PIN_OSPEED_100M(GPIOD_PIN3) |          \
                                      PIN_OSPEED_100M(GPIOD_RESET) |         \
                                      PIN_OSPEED_100M(GPIOD_OVER_CURRENT) |  \
