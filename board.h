@@ -30,7 +30,6 @@
 
 /*
  * Board oscillators-related settings.
- * NOTE: LSE not fitted.
  */
 #if !defined(STM32_LSECLK)
 #define STM32_LSECLK                32768
