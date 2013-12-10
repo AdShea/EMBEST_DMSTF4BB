@@ -17,6 +17,10 @@
     LSEFrequency="32768"
     LSEBypass="false"
     VDD="300" />
+  <ethernet_phy>
+    <identifier>MII_LAN8720A_ID</identifier>
+    <bus_type>RMII</bus_type>
+  </ethernet_phy>
   <ports>
     <GPIOA>
       <pin0
@@ -28,21 +32,21 @@
         Mode="Input"
         Alternate="0" />
       <pin1
-        ID=""
+        ID="ETH_RMII_REF_CLK"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
-        Mode="Input"
-        Alternate="0" />
+        Resistor="Floating"
+        Mode="Alternate"
+        Alternate="11" />
       <pin2
-        ID=""
+        ID="ETH_RMII_MDIO"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
-        Mode="Input"
-        Alternate="0" />
+        Resistor="Floating"
+        Mode="Alternate"
+        Alternate="11" />
       <pin3
         ID=""
         Type="PushPull"
@@ -76,13 +80,13 @@
         Mode="Alternate"
         Alternate="5" />
       <pin7
-        ID="SDI"
+        ID="ETH_RMII_CRS_DV"
         Type="PushPull"
         Level="High"
-        Speed="High"
+        Speed="Maximum"
         Resistor="Floating"
         Mode="Alternate"
-        Alternate="5" />
+        Alternate="11" />
       <pin8
         ID=""
         Type="PushPull"
@@ -238,29 +242,29 @@
         Mode="Input"
         Alternate="0" />
       <pin11
-        ID=""
+        ID="ETH_RMII_TX_EN"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
-        Mode="Input"
-        Alternate="0" />
+        Resistor="Floating"
+        Mode="Alternate"
+        Alternate="11" />
       <pin12
-        ID=""
+        ID="ETH_RMII_TXD0"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
-        Mode="Input"
-        Alternate="0" />
+        Resistor="Floating"
+        Mode="Alternate"
+        Alternate="11" />
       <pin13
-        ID=""
+        ID="ETH_RMII_TXD1"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
-        Mode="Input"
-        Alternate="0" />
+        Resistor="Floating"
+        Mode="Alternate"
+        Alternate="11" />
       <pin14
         ID=""
         Type="PushPull"
@@ -288,13 +292,13 @@
         Mode="Output"
         Alternate="0" />
       <pin1
-        ID=""
+        ID="ETH_RMII_MDC"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
-        Mode="Input"
-        Alternate="0" />
+        Resistor="Floating"
+        Mode="Alternate"
+        Alternate="11" />
       <pin2
         ID=""
         Type="PushPull"
@@ -312,21 +316,21 @@
         Mode="Input"
         Alternate="0" ></pin3>
       <pin4
-        ID=""
+        ID="ETH_RMII_RXD0"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
-        Mode="Input"
-        Alternate="0" />
+        Resistor="Floating"
+        Mode="Alternate"
+        Alternate="11" />
       <pin5
-        ID=""
+        ID="ETH_RMII_RXD1"
         Type="PushPull"
         Level="High"
         Speed="Maximum"
-        Resistor="PullUp"
-        Mode="Input"
-        Alternate="0" />
+        Resistor="Floating"
+        Mode="Alternate"
+        Alternate="11" />
       <pin6
         ID=""
         Type="PushPull"
@@ -556,12 +560,12 @@
         Mode="Input"
         Alternate="0" />
       <pin2
-        ID=""
+        ID="ETH_NRST"
         Type="PushPull"
         Level="High"
-        Speed="Maximum"
-        Resistor="Floating"
-        Mode="Input"
+        Speed="High"
+        Resistor="PullUp"
+        Mode="Output"
         Alternate="0" />
       <pin3
         ID="CS_SPI"
