@@ -42,7 +42,7 @@
 /*
  * Ethernet PHY type.
  */
-#define BOARD_PHY_ID            MII_LAN8720A_ID
+#define BOARD_PHY_ID            MII_LAN8720_ID
 #define BOARD_PHY_RMII
 
 /*
